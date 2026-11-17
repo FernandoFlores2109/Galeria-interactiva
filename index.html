@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛒 Tienda de Productos</h1>
+    </header>
+
+    <main>
+        <!-- Filtros -->
+        <section class="filtros">
+            <!-- Filtro por categoría -->
+            <div class="filtro-categoria">
+                <h3>Filtrar por categoría</h3>
+                <div id="botones-categoria"></div>
+            </div>
+
+            <!-- Filtro por precio -->
+            <div class="filtro-precio">
+                <h3>Filtrar por precio máximo</h3>
+                <div class="precio-input">
+                    <input type="number" id="precio-maximo" placeholder="Ej: 500" min="0">
+                    <button id="btn-filtrar-precio">Filtrar</button>
+                    <button id="btn-limpiar">Mostrar todos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenedor de productos -->
+        <section id="contenedor-productos" class="contenedor-productos"></section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
